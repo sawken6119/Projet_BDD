@@ -6,6 +6,13 @@ Spécialiste des processus éditoriaux, de la gestion des droits d'auteur et de 
 
 ---
 
+## Instruction 
+1. Identifie et liste toutes les règles métier spécifiques au domaine de l'édition de manga
+2. Définis précisément le dictionnaire de données avec toutes les entités, attributs et leurs caractéristiques
+3. Organise les informations de manière structurée pour faciliter la conception MERISE
+
+---
+
 ## Contexte
 Notre entreprise gère :  
 
@@ -16,6 +23,15 @@ Notre entreprise gère :
 - Les **traductions** dans différentes langues.  
 - Des **produits dérivés** (goodies, figurines, etc.).  
 - Le **suivi des parutions** dans les magazines.
+
+---
+
+## Référence
+Références 
+- Sites de référence : https://www.glenat.com
+- Processus éditoriaux des maisons d'édition françaises
+- Gestion des droits d'auteur dans l'édition
+- Organisation type d'une série manga (volumes, chapitres, magazines)
 
 ---
 
