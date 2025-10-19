@@ -181,7 +181,7 @@ Le travail a été guidé par le **Prompt Riccardo**, qui définit les rôles, l
 La base de données SAWADOGO a pour objectif d’aider les maisons d’édition à centraliser et structurer toutes les informations relatives à la production, la publication et la distribution de mangas.
 Elle permet de gérer à la fois les mangakas, les œuvres, les magazines de prépublication et les performances commerciales.
 
-*** 👩‍💼 Acteur principal *** 
+**👩‍💼 Acteur principal** 
 
 L’utilisateur principal est le responsable éditorial d’une maison d’édition.
 Il est chargé de :
@@ -196,7 +196,7 @@ planifier les publications futures dans les magazines,
 
 et assurer la cohérence des données (dates, statuts, catégories…).
 
-*** 🧩 Objectifs du système ***
+**🧩 Objectifs du système**
 
 La base permet au responsable de :
 
@@ -210,7 +210,7 @@ Relier chaque manga à sa maison d’édition et à son magazine de prépublicat
 
 Garantir la cohérence temporelle entre création du manga, publication des volumes et parution des chapitres.
 
-*** 📚 Exemple d’utilisation concret ***
+**📚 Exemple d’utilisation concret**
 
 Cas d’usage : suivi de performance d’un manga
 
@@ -232,7 +232,7 @@ Il peut ensuite consulter la liste des mangakas ayant contribué à ces mangas, 
 
 Enfin, il vérifie les magazines de prépublication associés à ces titres pour planifier les futures sorties.
 
-*** 💬 Autres requêtes typiques ***
+**💬 Autres requêtes typiques**
 
 Obtenir la liste des mangas terminés par maison d’édition.
 
@@ -244,7 +244,7 @@ Identifier les volumes dont le tirage initial est supérieur à la moyenne gén�
 
 Rechercher les chapitres publiés avant 2000 pour les rééditions.
 
-*** 🚀 Conclusion du scénario ***
+**🚀 Conclusion du scénario**
 
 Ce scénario illustre comment la base SAWADOGO offre une vision globale, cohérente et analytique de l’écosystème éditorial du manga.
 Elle soutient les décisions stratégiques (publication, marketing, ventes) tout en assurant une intégrité des données conforme aux règles métier et à la méthode MERISE.
