@@ -174,8 +174,9 @@ Le travail a été guidé par le **Prompt Riccardo**, qui définit les rôles, l
 > 📊 Le modèle conceptuel de données (MCD) a été conçu selon les règles MERISE et respecte la **3ᵉ forme normale (3FN)**.
 > Il inclut les entités : *Maison_Édition*, *Manga*, *Mangaka*, *Volume*, *Chapitre*, *Magazine*, et leurs relations (*Publier*, *Écrire*, *Contenir*, *Vente*).
 
-🧠 Scénario d’usage de la base de données
-🎯 Contexte général
+
+## 🧠 Scénario d’usage de la base de données
+## 🎯 Contexte général
 
 La base de données SAWADOGO a pour objectif d’aider les maisons d’édition à centraliser et structurer toutes les informations relatives à la production, la publication et la distribution de mangas.
 Elle permet de gérer à la fois les mangakas, les œuvres, les magazines de prépublication et les performances commerciales.
