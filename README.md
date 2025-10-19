@@ -174,3 +174,76 @@ Le travail a été guidé par le **Prompt Riccardo**, qui définit les rôles, l
 > 📊 Le modèle conceptuel de données (MCD) a été conçu selon les règles MERISE et respecte la **3ᵉ forme normale (3FN)**.
 > Il inclut les entités : *Maison_Édition*, *Manga*, *Mangaka*, *Volume*, *Chapitre*, *Magazine*, et leurs relations (*Publier*, *Écrire*, *Contenir*, *Vente*).
 
+🧠 Scénario d’usage de la base de données
+🎯 Contexte général
+
+La base de données SAWADOGO a pour objectif d’aider les maisons d’édition à centraliser et structurer toutes les informations relatives à la production, la publication et la distribution de mangas.
+Elle permet de gérer à la fois les mangakas, les œuvres, les magazines de prépublication et les performances commerciales.
+
+👩‍💼 Acteur principal
+
+L’utilisateur principal est le responsable éditorial d’une maison d’édition.
+Il est chargé de :
+
+suivre la publication des mangas, volumes et chapitres,
+
+consulter les performances de vente et tirages,
+
+gérer les auteurs affiliés et leurs rôles,
+
+planifier les publications futures dans les magazines,
+
+et assurer la cohérence des données (dates, statuts, catégories…).
+
+🧩 Objectifs du système
+
+La base permet au responsable de :
+
+Lister les mangas en cours, terminés ou en pause.
+
+Identifier les mangakas et leurs rôles dans chaque série.
+
+Analyser le tirage moyen des volumes pour détecter les titres les plus rentables.
+
+Relier chaque manga à sa maison d’édition et à son magazine de prépublication.
+
+Garantir la cohérence temporelle entre création du manga, publication des volumes et parution des chapitres.
+
+📚 Exemple d’utilisation concret
+
+Cas d’usage : suivi de performance d’un manga
+
+Le responsable souhaite connaître les mangas dont le tirage moyen dépasse 450 000 exemplaires.
+→ Il exécute la requête SQL :
+
+SELECT M.Titre_Traduit_Manga AS Titre, 
+       ROUND(AVG(V.TirageInitial_Volume)) AS Tirage_Moyen
+FROM Manga M
+JOIN Volume V ON M.ID_Manga = V.ID_Manga
+GROUP BY M.ID_Manga, M.Titre_Traduit_Manga
+HAVING AVG(V.TirageInitial_Volume) > 450000
+ORDER BY Tirage_Moyen DESC;
+
+
+Cette requête lui permet d’identifier les séries à fort potentiel commercial.
+
+Il peut ensuite consulter la liste des mangakas ayant contribué à ces mangas, ainsi que leurs maisons d’édition grâce à des jointures entre les tables Manga, Écrire, Mangaka et Maison_Edition.
+
+Enfin, il vérifie les magazines de prépublication associés à ces titres pour planifier les futures sorties.
+
+💬 Autres requêtes typiques
+
+Obtenir la liste des mangas terminés par maison d’édition.
+
+Afficher les mangakas ayant travaillé sur plus d’un manga.
+
+Lister les mangas publiés dans un même magazine (ex: Weekly Shonen Jump).
+
+Identifier les volumes dont le tirage initial est supérieur à la moyenne générale.
+
+Rechercher les chapitres publiés avant 2000 pour les rééditions.
+
+🚀 Conclusion du scénario
+
+Ce scénario illustre comment la base SAWADOGO offre une vision globale, cohérente et analytique de l’écosystème éditorial du manga.
+Elle soutient les décisions stratégiques (publication, marketing, ventes) tout en assurant une intégrité des données conforme aux règles métier et à la méthode MERISE.
