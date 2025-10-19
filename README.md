@@ -218,13 +218,13 @@ Cas d’usage : suivi de performance d’un manga
 Le responsable souhaite connaître les mangas dont le tirage moyen dépasse 450 000 exemplaires.
 → Il exécute la requête SQL :
 
-SELECT M.Titre_Traduit_Manga AS Titre, 
-       ROUND(AVG(V.TirageInitial_Volume)) AS Tirage_Moyen
-FROM Manga M
-JOIN Volume V ON M.ID_Manga = V.ID_Manga
-GROUP BY M.ID_Manga, M.Titre_Traduit_Manga
-HAVING AVG(V.TirageInitial_Volume) > 450000
-ORDER BY Tirage_Moyen DESC;
+       SELECT M.Titre_Traduit_Manga AS Titre, 
+              ROUND(AVG(V.TirageInitial_Volume)) AS Tirage_Moyen
+       FROM Manga M
+       JOIN Volume V ON M.ID_Manga = V.ID_Manga
+       GROUP BY M.ID_Manga, M.Titre_Traduit_Manga
+       HAVING AVG(V.TirageInitial_Volume) > 450000
+       ORDER BY Tirage_Moyen DESC;
 
 
 Cette requête lui permet d’identifier les séries à fort potentiel commercial.
