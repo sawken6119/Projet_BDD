@@ -174,9 +174,3 @@ Le travail a été guidé par le **Prompt Riccardo**, qui définit les rôles, l
 > 📊 Le modèle conceptuel de données (MCD) a été conçu selon les règles MERISE et respecte la **3ᵉ forme normale (3FN)**.
 > Il inclut les entités : *Maison_Édition*, *Manga*, *Mangaka*, *Volume*, *Chapitre*, *Magazine*, et leurs relations (*Publier*, *Écrire*, *Contenir*, *Vente*).
 
-Une image contenant texte, diagramme, capture d’écran, ligne
-
-Le contenu généré par l’IA peut être incorrect.
-
-Souhaites-tu que je t’ajoute aussi une **section finale “💾 Script SQL (Création des tables + contraintes)”** formatée pour GitHub avec coloration SQL (` ```sql ... ``` `) ?
-👉 Ça rendrait ton dépôt complet et pro.
